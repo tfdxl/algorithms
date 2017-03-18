@@ -76,6 +76,10 @@ public class RBTree<T> implements RBTreeOperations<T> {
     }
 
     public WrappedData<T> delete(int key) {
+
+        Node z = new Node(key);
+
+
         return null;
     }
 
@@ -179,18 +183,109 @@ public class RBTree<T> implements RBTreeOperations<T> {
 
     private void rbTransplant(Node u, Node v) {
 
-        if(u.getParent() == this.nil){
+        if (u.getParent() == this.nil) {
             this.root = v;
-        }else if(u == u.getParent().getLeft()){
+        } else if (u == u.getParent().getLeft()) {
             u.getParent().setLeft(v);
-        }else{
+        } else {
             u.getParent().setRight(v);
         }
         v.setParent(u.getParent());
     }
 
-    private void rbDeleteFixup(Node z) {
+    private void rbDeleteFixup(Node x) {
+        while (x != this.root && x.getColor() == Color.BLACK.getColor()) {
+            if (x == x.getParent().getLeft()) {
+                Node w = x.getParent().getRight();
+                if (w.getColor() == Color.RED.getColor()) {
+                    w.setColor(Color.BLACK.getColor());
+                    x.getParent().setColor(Color.RED.getColor());
+                    leftRotate(x.getParent());
+                    w = x.getParent().getRight();
+                }
 
+                if (w.getLeft().getColor() == Color.BLACK.getColor() && w.getRight().getColor() == Color.BLACK.getColor()) {
+
+                    w.setColor(Color.RED.getColor());
+                    x = x.getParent();
+                } else if (w.getRight().getColor() == Color.BLACK.getColor()) {
+
+                    w.getLeft().setColor(Color.BLACK.getColor());
+                    w.setColor(Color.RED.getColor());
+                    rightRotate(w);
+                    w = x.getParent().getRight();
+                }
+                w.setColor(x.getParent().getColor());
+                x.getParent().setColor(Color.BLACK.getColor());
+                w.getRight().setColor(Color.BLACK.getColor());
+                leftRotate(x.getParent());
+                x = this.root;
+
+            } else {
+                Node w = x.getParent().getLeft();
+                if (w.getColor() == Color.RED.getColor()) {
+                    w.setColor(Color.BLACK.getColor());
+                    x.getParent().setColor(Color.RED.getColor());
+                    rightRotate(x.getParent());
+                    w = x.getParent().getLeft();
+                }
+
+                if (w.getRight().getColor() == Color.BLACK.getColor() && w.getLeft().getColor() == Color.BLACK.getColor()) {
+
+                    w.setColor(Color.RED.getColor());
+                    x = x.getParent();
+                } else if (w.getLeft().getColor() == Color.BLACK.getColor()) {
+
+                    w.getRight().setColor(Color.BLACK.getColor());
+                    w.setColor(Color.RED.getColor());
+                    leftRotate(w);
+                    w = x.getParent().getRight();
+                }
+                w.setColor(x.getParent().getColor());
+                x.getParent().setColor(Color.BLACK.getColor());
+                w.getLeft().setColor(Color.BLACK.getColor());
+                rightRotate(x.getParent());
+                x = this.root;
+            }
+        }
+        x.setColor(Color.BLACK.getColor());
+    }
+
+    private void rbDelete(Node z) {
+        Node y = z;
+        Node x;
+        int yOriginalColor = y.getColor();
+        if (z.getLeft() == this.nil) {
+
+            x = z.getRight();
+            rbTransplant(z, z.getRight());
+        } else if (z.getRight() == this.nil) {
+            x = z.getLeft();
+            rbTransplant(z, z.getLeft());
+        } else {
+            y = treeMinimum(z.getRight());
+            yOriginalColor = y.getColor();
+            x = y.getRight();
+            if (y.getParent() == z) {
+                x.setParent(y);
+            } else {
+                rbTransplant(y, y.getRight());
+                y.setRight(z.getRight());
+                y.getRight().setParent(y);
+            }
+
+            rbTransplant(z, y);
+            y.setLeft(z.getLeft());
+            y.getLeft().setParent(y);
+            y.setColor(z.getColor());
+        }
+        if (yOriginalColor == Color.BLACK.getColor()) {
+            rbDeleteFixup(x);
+        }
+    }
+
+    private Node treeMinimum(Node node) {
+        return null;
     }
 
     @Data
@@ -209,6 +304,10 @@ public class RBTree<T> implements RBTreeOperations<T> {
             if (data != null) {
                 key = data.getKey();
             }
+        }
+
+        public Node(int key) {
+            this.key = key;
         }
 
         public Node(WrappedData data) {
