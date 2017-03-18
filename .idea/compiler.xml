@@ -6,6 +6,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algorithms" target="1.5" />
+      <module name="tree" target="1.5" />
       <module name="treealgorithms" target="1.5" />
     </bytecodeTargetLevel>
   </component>

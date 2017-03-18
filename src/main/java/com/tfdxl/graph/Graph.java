@@ -9,9 +9,9 @@ import java.util.Queue;
 public class Graph {
 
     //定点集合
-    private Vertex []vertexes;
+    private Vertex[] vertexes;
 
-    private Map<Vertex,Queue<Vertex>> adjcents;
+    private Map<Vertex, Queue<Vertex>> adjcents;
 
     public Vertex[] getVertexes() {
         return vertexes;
