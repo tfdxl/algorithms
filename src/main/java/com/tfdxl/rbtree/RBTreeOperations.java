@@ -53,7 +53,7 @@ public interface RBTreeOperations<T> {
     boolean update(WrappedData<T> data);
 
     /**
-     * 红色树节点的颜色
+     * 红黑树节点的颜色
      */
     @AllArgsConstructor
     enum Color{

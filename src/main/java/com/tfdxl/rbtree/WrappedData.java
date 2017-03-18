@@ -10,4 +10,9 @@ public class WrappedData<T> {
 
     private int key;
     private T data;
+
+    @Override
+    public boolean equals(Object that){
+        return false;
+    }
 }

@@ -10,9 +10,8 @@ import lombok.Data;
  * (3)每个叶子节点是就黑色的;
  * (4)如果一个节点是黑色的，那么他的两个子节点是黑色的；
  * (5)对于每个节点，从该节点到其所有的后代的节点的简单路径上，均包含相同数目的黑色节点
- *
  */
-public class RBTree<T> implements RBTreeOperations<T>{
+public class RBTree<T> implements RBTreeOperations<T> {
 
     private int size;
 
@@ -24,15 +23,16 @@ public class RBTree<T> implements RBTreeOperations<T>{
     /**
      * nil节点
      */
-    private Node nil ;
+    private Node nil;
 
-    private void init(){
+    //初始化
+    private void init() {
         root = null;
-        nil = new Node(Color.BLACK.getColor(),null,null,null,null);
+        nil = new Node(Color.BLACK.getColor(), null, null, null, null);
         size = 0;
     }
 
-    private RBTree(){
+    private RBTree() {
         init();
     }
 
@@ -49,20 +49,20 @@ public class RBTree<T> implements RBTreeOperations<T>{
 
         Node y = this.nil;
         Node x = this.root;
-        while(x!=this.nil){
+        while (x != this.nil) {
             y = x;
-            if(z.getKey()<x.getKey()){
+            if (z.getKey() < x.getKey()) {
                 x = x.left;
-            }else {
+            } else {
                 x = x.right;
             }
         }
         z.setParent(y);
-        if(y == this.nil){
+        if (y == this.nil) {
             this.root = z;
-        }else if(z.key<y.key){
+        } else if (z.key < y.key) {
             y.left = z;
-        }else{
+        } else {
             y.right = z;
         }
         z.left = this.nil;
@@ -71,7 +71,7 @@ public class RBTree<T> implements RBTreeOperations<T>{
         z.color = Color.RED.getColor();
         //对节点进行着色并且旋转
         rbInsertFixup(z);
-        this.size ++;
+        this.size++;
         return true;
     }
 
@@ -87,38 +87,38 @@ public class RBTree<T> implements RBTreeOperations<T>{
         return false;
     }
 
-    private void leftRotate(Node x){
+    private void leftRotate(Node x) {
         Node y = x.getRight();
         x.setRight(y.getLeft());
-        if(y.getLeft() != nil){
+        if (y.getLeft() != nil) {
             y.getLeft().setParent(x);
         }
         //link x's parent to y
         y.setParent(x.getParent());
-        if(x.getParent()==nil){
+        if (x.getParent() == nil) {
             this.root = y;
-        }else if(x == x.getParent().getLeft()){
+        } else if (x == x.getParent().getLeft()) {
             x.getParent().setLeft(y);
-        }else {
+        } else {
             x.getParent().setRight(y);
         }
         y.setLeft(x);
         x.setParent(y);
     }
 
-    private void rightRotate(Node y){
+    private void rightRotate(Node y) {
         Node x = y.getLeft();
         y.setLeft(x.getRight());
-        if(x.getRight()!=this.nil){
+        if (x.getRight() != this.nil) {
             x.getRight().setRight(y);
         }
         //link y's parent to x
         x.setParent(y.getParent());
-        if(y.getParent() == nil){
+        if (y.getParent() == nil) {
             nil = x;
-        }else if(y == y.getParent().getLeft()){
+        } else if (y == y.getParent().getLeft()) {
             y.getParent().setRight(x);
-        }else{
+        } else {
             y.getParent().setLeft(x);
         }
         x.setRight(y);
@@ -126,38 +126,47 @@ public class RBTree<T> implements RBTreeOperations<T>{
     }
 
 
-    private void rbInsertFixup(Node z){
-        while (z.getParent().getColor() == Color.RED.getColor()){
-
+    /**
+     * 插入的时候最多破坏的是性质2或者4
+     *
+     * @param z
+     */
+    private void rbInsertFixup(Node z) {
+        //循环终止的条件是z.p的颜色是黑色的（若果z时根节点，那么z的父亲节点是nil，其颜色是黑）
+        while (z.getParent().getColor() == Color.RED.getColor()) {
             //表示的是z的父节点为其祖父节点的左孩子
-            if(z.getParent() == z.getParent().getParent().getLeft()){
+            if (z.getParent() == z.getParent().getParent().getLeft()) {
                 Node y = z.getParent().getParent().getRight();
-                //case1:
-                if(y.getColor() == Color.RED.getColor()){
+                //case1:(z的叔节点y是红色的)
+                if (y.getColor() == Color.RED.getColor()) {
+                    //solution:将父亲和叔节染成黑色
                     z.getParent().setColor(Color.BLACK.getColor());
                     y.setColor(Color.BLACK.getColor());
+                    //祖父节点染成红色
                     z.getParent().getParent().setColor(Color.RED.getColor());
+                    //z置为祖父节点
                     z = z.getParent().getParent();
-                }else if(z == z.getParent().getRight()){
+                    //case2:z的叔节点y是黑色的并且z是一个右孩子
+                } else if (z == z.getParent().getRight()) {
                     z = z.getParent();
                     leftRotate(z);
-                }else {
+                } else {
                     z.getParent().setColor(Color.BLACK.getColor());
                     z.getParent().getParent().setColor(Color.RED.getColor());
                     rightRotate(z.getParent().getParent());
                 }
-            }else {
+            } else {
                 Node y = z.getParent().getParent().getLeft();
                 //case1:
-                if(y.getColor() == Color.RED.getColor()){
+                if (y.getColor() == Color.RED.getColor()) {
                     z.getParent().setColor(Color.BLACK.getColor());
                     y.setColor(Color.BLACK.getColor());
                     z.getParent().getParent().setColor(Color.RED.getColor());
                     z = z.getParent().getParent();
-                }else if(z == z.getParent().getLeft()){
+                } else if (z == z.getParent().getLeft()) {
                     z = z.getParent();
                     rightRotate(z);
-                }else {
+                } else {
                     z.getParent().setColor(Color.BLACK.getColor());
                     z.getParent().getParent().setColor(Color.RED.getColor());
                     leftRotate(z.getParent().getParent());
@@ -168,31 +177,49 @@ public class RBTree<T> implements RBTreeOperations<T>{
         this.root.setColor(Color.BLACK.getColor());
     }
 
+    private void rbTransplant(Node u, Node v) {
+
+        if(u.getParent() == this.nil){
+            this.root = v;
+        }else if(u == u.getParent().getLeft()){
+            u.getParent().setLeft(v);
+        }else{
+            u.getParent().setRight(v);
+        }
+        v.setParent(u.getParent());
+    }
+
+    private void rbDeleteFixup(Node z) {
+
+    }
+
     @Data
-    public static class Node{
+    public static class Node {
 
 
-        public Node(){}
+        public Node() {
+        }
 
-        public Node(int color,Node left,Node right,Node parent,WrappedData data){
+        public Node(int color, Node left, Node right, Node parent, WrappedData data) {
             this.color = color;
             this.left = left;
             this.right = right;
             this.parent = parent;
             this.data = data;
-            if(data != null){
+            if (data != null) {
                 key = data.getKey();
             }
         }
 
-        public Node(WrappedData data){
-            if(data != null){
+        public Node(WrappedData data) {
+            if (data != null) {
                 this.key = data.getKey();
             }
         }
 
         /**
          * 颜色
+         *
          * @see Color
          */
         private int color;
