@@ -19,12 +19,22 @@ public class RBTree<T> implements RBTreeOperations<T>{
     /**
      * 根节点
      */
-    private Node root = new Node();
+    private Node root;
 
     /**
      * nil节点
      */
-    private Node nil = null;
+    private Node nil ;
+
+    private void init(){
+        root = null;
+        nil = new Node(Color.BLACK.getColor(),null,null,null,null);
+        size = 0;
+    }
+
+    private RBTree(){
+        init();
+    }
 
     public int size() {
         return size;
@@ -35,10 +45,34 @@ public class RBTree<T> implements RBTreeOperations<T>{
     }
 
     public boolean insert(WrappedData<T> data) {
+        Node z = new Node(data);
 
-
-
-        return false;
+        Node y = this.nil;
+        Node x = this.root;
+        while(x!=this.nil){
+            y = x;
+            if(z.getKey()<x.getKey()){
+                x = x.left;
+            }else {
+                x = x.right;
+            }
+        }
+        z.setParent(y);
+        if(y == this.nil){
+            this.root = z;
+        }else if(z.key<y.key){
+            y.left = z;
+        }else{
+            y.right = z;
+        }
+        z.left = this.nil;
+        z.right = this.nil;
+        //暂时涂成红色
+        z.color = Color.RED.getColor();
+        //对节点进行着色并且旋转
+        rbInsertFixup(z);
+        this.size ++;
+        return true;
     }
 
     public WrappedData<T> delete(int key) {
@@ -85,13 +119,54 @@ public class RBTree<T> implements RBTreeOperations<T>{
         }else if(y == y.getParent().getLeft()){
             y.getParent().setRight(x);
         }else{
-            y.getParent().setLeft(x
-            );
+            y.getParent().setLeft(x);
         }
         x.setRight(y);
         y.setParent(x);
     }
 
+
+    private void rbInsertFixup(Node z){
+        while (z.getParent().getColor() == Color.RED.getColor()){
+
+            //表示的是z的父节点为其祖父节点的左孩子
+            if(z.getParent() == z.getParent().getParent().getLeft()){
+                Node y = z.getParent().getParent().getRight();
+                //case1:
+                if(y.getColor() == Color.RED.getColor()){
+                    z.getParent().setColor(Color.BLACK.getColor());
+                    y.setColor(Color.BLACK.getColor());
+                    z.getParent().getParent().setColor(Color.RED.getColor());
+                    z = z.getParent().getParent();
+                }else if(z == z.getParent().getRight()){
+                    z = z.getParent();
+                    leftRotate(z);
+                }else {
+                    z.getParent().setColor(Color.BLACK.getColor());
+                    z.getParent().getParent().setColor(Color.RED.getColor());
+                    rightRotate(z.getParent().getParent());
+                }
+            }else {
+                Node y = z.getParent().getParent().getLeft();
+                //case1:
+                if(y.getColor() == Color.RED.getColor()){
+                    z.getParent().setColor(Color.BLACK.getColor());
+                    y.setColor(Color.BLACK.getColor());
+                    z.getParent().getParent().setColor(Color.RED.getColor());
+                    z = z.getParent().getParent();
+                }else if(z == z.getParent().getLeft()){
+                    z = z.getParent();
+                    rightRotate(z);
+                }else {
+                    z.getParent().setColor(Color.BLACK.getColor());
+                    z.getParent().getParent().setColor(Color.RED.getColor());
+                    leftRotate(z.getParent().getParent());
+                }
+            }
+
+        }
+        this.root.setColor(Color.BLACK.getColor());
+    }
 
     @Data
     public static class Node{
@@ -107,6 +182,12 @@ public class RBTree<T> implements RBTreeOperations<T>{
             this.data = data;
             if(data != null){
                 key = data.getKey();
+            }
+        }
+
+        public Node(WrappedData data){
+            if(data != null){
+                this.key = data.getKey();
             }
         }
 

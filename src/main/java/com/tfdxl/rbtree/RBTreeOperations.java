@@ -58,12 +58,12 @@ public interface RBTreeOperations<T> {
     @AllArgsConstructor
     enum Color{
 
-        @Getter
         RED(0,"红色"),
-        @Getter
         BLACK(1,"黑色");
 
+        @Getter
         private int color;
+        @Getter
         private String desc;
 
     }
