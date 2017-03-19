@@ -159,7 +159,7 @@ public class RBTree<T> implements RBTreeOperations<T> {
                     z.getParent().getParent().setColor(Color.RED.getColor());
                     rightRotate(z.getParent().getParent());
                 }
-            } else {
+            } else { //symmetric
                 Node y = z.getParent().getParent().getLeft();
                 //case1:
                 if (y.getColor() == Color.RED.getColor()) {
@@ -256,7 +256,6 @@ public class RBTree<T> implements RBTreeOperations<T> {
         Node x;
         int yOriginalColor = y.getColor();
         if (z.getLeft() == this.nil) {
-
             x = z.getRight();
             rbTransplant(z, z.getRight());
         } else if (z.getRight() == this.nil) {
