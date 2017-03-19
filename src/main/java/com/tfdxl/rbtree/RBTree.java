@@ -27,12 +27,12 @@ public class RBTree<T> implements RBTreeOperations<T> {
 
     //初始化
     private void init() {
-        root = null;
         nil = new Node(Color.BLACK.getColor(), null, null, null, null);
+        root = nil;
         size = 0;
     }
 
-    private RBTree() {
+    public RBTree() {
         init();
     }
 
@@ -288,7 +288,7 @@ public class RBTree<T> implements RBTreeOperations<T> {
     }
 
     @Data
-    public static class Node {
+    static final class Node {
 
 
         public Node() {
