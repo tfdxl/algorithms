@@ -77,18 +77,46 @@ public class RBTree<T> implements RBTreeOperations<T> {
 
     public WrappedData<T> delete(int key) {
 
-        Node z = new Node(key);
-
-
-        return null;
+        Node node = this.root;
+        while (node != null) {
+            if (key < node.getKey())
+                node = node.left;
+            else if (key > node.getKey())
+                node = node.right;
+            else
+                return node.getData();
+        }
+        rbDelete(node);
+        return node.getData();
     }
 
     public WrappedData<T> search(int key) {
+
+        Node node = this.root;
+        while (node != null) {
+            if (key < node.getKey())
+                node = node.left;
+            else if (key > node.getKey())
+                node = node.right;
+            else
+                return node.getData();
+        }
         return null;
     }
 
     public boolean update(WrappedData<T> data) {
-        return false;
+        Node node = this.root;
+        while (node != null) {
+            if (data.getKey() < node.getKey())
+                node = node.left;
+            else if (data.getKey() > node.getKey())
+                node = node.right;
+            else
+                //just break
+                break;
+        }
+        node.setData(data);
+        return true;
     }
 
     private void leftRotate(Node x) {
@@ -231,7 +259,6 @@ public class RBTree<T> implements RBTreeOperations<T> {
                 }
 
                 if (w.getRight().getColor() == Color.BLACK.getColor() && w.getLeft().getColor() == Color.BLACK.getColor()) {
-
                     w.setColor(Color.RED.getColor());
                     x = x.getParent();
                 } else if (w.getLeft().getColor() == Color.BLACK.getColor()) {
@@ -283,10 +310,22 @@ public class RBTree<T> implements RBTreeOperations<T> {
         }
     }
 
+    /**
+     * 获取key最小的节点
+     *
+     * @param node
+     * @return
+     */
     private Node treeMinimum(Node node) {
-        return null;
+        while (node.getLeft() != null) {
+            node = node.getLeft();
+        }
+        return node;
     }
 
+    /**
+     * 内部节点定义
+     */
     @Data
     static final class Node {
 
