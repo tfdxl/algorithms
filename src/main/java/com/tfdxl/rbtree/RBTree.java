@@ -13,17 +13,17 @@ import lombok.Data;
  */
 public class RBTree<T> implements RBTreeOperations<T> {
 
-    private int size;
+    private transient int size;
 
     /**
      * 根节点
      */
-    private Node root;
+    private transient Node root;
 
     /**
      * nil节点
      */
-    private Node nil;
+    private transient Node nil;
 
     //初始化
     private void init() {
@@ -41,6 +41,15 @@ public class RBTree<T> implements RBTreeOperations<T> {
     }
 
     public boolean exists(WrappedData data) {
+        Node node = this.root;
+        while (node != null) {
+            if (data.getKey() < node.getKey())
+                node = node.left;
+            else if (data.getKey() > node.getKey())
+                node = node.right;
+            else
+                return true;
+        }
         return false;
     }
 
@@ -119,6 +128,11 @@ public class RBTree<T> implements RBTreeOperations<T> {
         return true;
     }
 
+    public void printAllNodes() {
+
+    }
+
+    //rotate operation keeps balance
     private void leftRotate(Node x) {
         Node y = x.getRight();
         x.setRight(y.getLeft());

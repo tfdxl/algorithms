@@ -53,6 +53,11 @@ public interface RBTreeOperations<T> {
     boolean update(WrappedData<T> data);
 
     /**
+     * 按照层级结构打印红黑树的所有的节点，并标注节点的颜色
+     */
+    void printAllNodes();
+
+    /**
      * 红黑树节点的颜色
      */
     @AllArgsConstructor
