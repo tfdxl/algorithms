@@ -63,6 +63,11 @@ public class MaxSub {
     }
 
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
     private static int maxSumRec(int[] a, int left, int right) {
         if (left == right)
             if (a[left] > 0)
@@ -95,5 +100,25 @@ public class MaxSub {
 
     private static int max(int a, int b, int c) {
         return ((a > b) ? a : b) > c ? ((a > b) ? a : b) : c;
+    }
+
+    /**
+     * O(N)
+     *
+     * @param a
+     * @return
+     */
+    public static int maxSubSum4(int[] a) {
+        int maxSum = 0, thisSum = 0;
+        for (int j = 0; j < a.length; j++) {
+            thisSum += a[j];
+
+            if (thisSum > maxSum) {
+                maxSum = thisSum;
+            } else if (thisSum <= 0) {
+                thisSum = 0;
+            }
+        }
+        return maxSum;
     }
 }
