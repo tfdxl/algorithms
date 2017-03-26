@@ -5,7 +5,7 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="algorithms" target="1.5" />
+      <module name="algorithms" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="RmicSettings">
