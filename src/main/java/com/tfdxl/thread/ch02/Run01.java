@@ -5,10 +5,10 @@ package com.tfdxl.thread.ch02;
  */
 public class Run01 {
 
-    public static void main(String[] args) throws InterruptedException {
-        PrintString printString = new PrintString();
-        printString.printStringMethod();
-        System.out.println("我要停止他");
-        printString.setContinuePrint(false);
+    public static void main(String[] args) {
+        PrintString01 printString01 = new PrintString01();
+        new Thread(printString01).start();
+        System.out.println("我要结束他,stopThread = "+Thread.currentThread().getName());
+        printString01.setContinuePrint(false);
     }
 }
