@@ -4,10 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/tfdxl/rbtree/RBTree.java" line="298" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" />
+    <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="add">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,16 +38,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VolatileExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/aqs/VolatileExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PrintString.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/PrintString.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CutRod.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CutRod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
@@ -111,8 +101,18 @@
       <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="627">
+              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatrixOperation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/FileCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/Indexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/TestHarness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/Preloader.java" />
@@ -223,8 +222,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/PrintString.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/Run01.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/PrintString01.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" />
       </list>
     </option>
   </component>
@@ -815,36 +815,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dynamic_programming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfdxl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch02" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1670,7 +1640,7 @@
       <workItem from="1490624866085" duration="855000" />
       <workItem from="1490625737444" duration="3146000" />
       <workItem from="1490700153646" duration="7173000" />
-      <workItem from="1491204070678" duration="8259000" />
+      <workItem from="1491204070678" duration="9368000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1484987936958</created>
@@ -1875,11 +1845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491245066603</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add">
+      <created>1491246495710</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1491246495710</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111480000" />
+    <option name="totallyTimeSpent" value="112589000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1908,7 +1885,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978159" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35144928" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35101405" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1980,7 +1957,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/TimeUnit.java" />
     <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/TransferQueue.java" />
     <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/TimeoutException.java" />
     <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/FutureTask.java" />
@@ -2265,18 +2241,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
