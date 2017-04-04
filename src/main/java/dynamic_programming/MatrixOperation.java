@@ -5,6 +5,11 @@ package dynamic_programming;
  */
 public class MatrixOperation {
 
+    /**
+     * @param a
+     * @param b
+     * @return
+     */
     public static Matrix matrixMultiply(Matrix a, Matrix b) {
 
         if (a.getColumns() != b.getRows()) {
@@ -69,7 +74,7 @@ public class MatrixOperation {
         printOptimalParens(s, 1, n);
     }
 
-    public static void printOptimalParens(int[][] s, int i, int j) {
+    private static void printOptimalParens(int[][] s, int i, int j) {
         if (i == j) {
             System.out.print("A" + i);
         } else {
