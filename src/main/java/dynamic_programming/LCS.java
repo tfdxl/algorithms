@@ -37,7 +37,6 @@ public class LCS {
         for (int i = 0; i <= m; i++)
             c[i][0] = 0;
 
-
         for (int j = 0; j <= n; j++)
             c[0][j] = 0;
 
