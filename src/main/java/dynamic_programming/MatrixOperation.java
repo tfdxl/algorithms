@@ -31,7 +31,11 @@ public class MatrixOperation {
         }
     }
 
-
+    /**
+     * 自底向上法求解
+     *
+     * @param p
+     */
     public static void matrixChainOrder(int[] p) {
 
         int n = p.length - 1;

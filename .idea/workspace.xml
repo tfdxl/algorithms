@@ -110,8 +110,8 @@
       <file leaf-file-name="MatrixOperation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -1691,7 +1691,7 @@
       <workItem from="1490625737444" duration="3146000" />
       <workItem from="1490700153646" duration="7173000" />
       <workItem from="1491204070678" duration="9975000" />
-      <workItem from="1491287329082" duration="2860000" />
+      <workItem from="1491287329082" duration="3200000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1484987936958</created>
@@ -1917,11 +1917,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491289553038</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add">
+      <created>1491290297820</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1491290297820</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116056000" />
+    <option name="totallyTimeSpent" value="116396000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -2336,8 +2343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="198">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
       </provider>
