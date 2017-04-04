@@ -34,7 +34,7 @@ public class MatrixOperation {
 
     public static void matrixChainOrder(int[] p) {
 
-        int n = p.length-1;
+        int n = p.length - 1;
 
         //allocate new table to save cost of m[i,j]
         int[][] m = new int[n + 1][n + 1];
@@ -61,23 +61,23 @@ public class MatrixOperation {
             }
         }
 
-        System.out.println("最小的代价： "+m[1][n]);
-        printOptimalParens(s,1,n);
+        System.out.println("最小的代价： " + m[1][n]);
+        printOptimalParens(s, 1, n);
     }
 
-    public static  void printOptimalParens(int[][] s, int i, int j) {
+    public static void printOptimalParens(int[][] s, int i, int j) {
         if (i == j) {
             System.out.print("A" + i);
         } else {
             System.out.print("(");
-            printOptimalParens(s,i,s[i][j]);
-            printOptimalParens(s,s[i][j]+1,j);
+            printOptimalParens(s, i, s[i][j]);
+            printOptimalParens(s, s[i][j] + 1, j);
             System.out.print(")");
         }
     }
 
     public static void main(String[] args) {
-        int [] p = {30,35,15,5,10,20,25};
+        int[] p = {30, 35, 15, 5, 10, 20, 25};
         matrixChainOrder(p);
     }
 
