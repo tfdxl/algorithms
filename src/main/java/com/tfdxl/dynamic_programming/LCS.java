@@ -1,4 +1,4 @@
-package dynamic_programming;
+package com.tfdxl.dynamic_programming;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

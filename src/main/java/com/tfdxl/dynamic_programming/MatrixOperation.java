@@ -1,4 +1,4 @@
-package dynamic_programming;
+package com.tfdxl.dynamic_programming;
 
 /**
  * Created by tianfeng on 2017/4/4.

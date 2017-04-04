@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/CutRod.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/LCS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/Matrix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/MatrixOperation.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +71,7 @@
         </entry>
       </file>
       <file leaf-file-name="CutRod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/CutRod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2128">
               <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
@@ -78,7 +81,7 @@
         </entry>
       </file>
       <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="627">
               <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
@@ -88,10 +91,10 @@
         </entry>
       </file>
       <file leaf-file-name="MatrixOperation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/MatrixOperation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -118,10 +121,10 @@
         </entry>
       </file>
       <file leaf-file-name="LCS.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/LCS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            <state relative-caret-position="84">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/TestHarness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/Preloader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/BoudedHashSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/AjacentList.java" />
@@ -226,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" />
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/LCS.java" />
       </list>
     </option>
   </component>
@@ -814,7 +817,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dynamic_programming" />
+              <option name="myItemId" value="tfdxl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -841,6 +844,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tfdxl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic_programming" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -922,11 +929,11 @@
     <configuration default="false" name="CutRod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dynamic_programming.*" />
+          <option name="PATTERN" value="com.tfdxl.dynamic_programming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="dynamic_programming.CutRod" />
+      <option name="MAIN_CLASS_NAME" value="com.tfdxl.dynamic_programming.CutRod" />
       <option name="VM_PARAMETERS" value="-Xms512m -Xmx1024m " />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -942,11 +949,11 @@
     <configuration default="false" name="MatrixOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dynamic_programming.*" />
+          <option name="PATTERN" value="com.tfdxl.dynamic_programming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="dynamic_programming.MatrixOperation" />
+      <option name="MAIN_CLASS_NAME" value="com.tfdxl.dynamic_programming.MatrixOperation" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -962,11 +969,11 @@
     <configuration default="false" name="LCS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dynamic_programming.*" />
+          <option name="PATTERN" value="com.tfdxl.dynamic_programming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="dynamic_programming.LCS" />
+      <option name="MAIN_CLASS_NAME" value="com.tfdxl.dynamic_programming.LCS" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1642,7 +1649,7 @@
       <workItem from="1490625737444" duration="3146000" />
       <workItem from="1490700153646" duration="7173000" />
       <workItem from="1491204070678" duration="9975000" />
-      <workItem from="1491287329082" duration="11854000" />
+      <workItem from="1491287329082" duration="12119000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1484987936958</created>
@@ -1910,11 +1917,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491310741857</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="add">
+      <created>1491310927454</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1491310927454</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125050000" />
+    <option name="totallyTimeSpent" value="125315000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -2294,7 +2308,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/CutRod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2128">
           <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
@@ -2302,7 +2316,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
@@ -2342,18 +2356,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/MatrixOperation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/dynamic_programming/LCS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        <state relative-caret-position="84">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
