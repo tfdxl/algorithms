@@ -4,9 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/tfdxl/rbtree/RBTree.java" line="298" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="">
+    <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="add">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,26 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PrintString.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/PrintString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Run.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/Run.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PrintString01.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/thread/ch02/PrintString01.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,84 +87,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixOperation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MatrixOperation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="171">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/soft/jdk/src.zip!/java/lang/Thread.java">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/soft/jdk/src.zip!/java/util/stream/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32870">
-              <caret line="1813" column="25" lean-forward="false" selection-start-line="1813" selection-start-column="25" selection-end-line="1813" selection-end-column="25" />
+            <state relative-caret-position="425">
+              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sink.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/soft/jdk/src.zip!/java/util/stream/Sink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="116" column="10" lean-forward="false" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LCS.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
-                <element signature="e#0#78800#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#5559#5560#0" expanded="false" />
-                <element signature="e#5600#5601#0" expanded="false" />
-                <element signature="e#6682#6683#0" expanded="false" />
-                <element signature="e#6722#6723#0" expanded="false" />
-                <element signature="e#14781#14782#0" expanded="false" />
-                <element signature="e#14845#14846#0" expanded="false" />
-                <element signature="e#15465#15466#0" expanded="false" />
-                <element signature="e#15531#15532#0" expanded="false" />
-                <element signature="e#15719#15720#0" expanded="false" />
-                <element signature="e#15790#15791#0" expanded="false" />
-                <element signature="e#17000#17001#0" expanded="false" />
-                <element signature="e#17067#17068#0" expanded="false" />
-                <element signature="e#17373#17374#0" expanded="false" />
-                <element signature="e#17414#17415#0" expanded="false" />
-                <element signature="e#18332#18333#0" expanded="false" />
-                <element signature="e#18374#18375#0" expanded="false" />
-                <element signature="e#18886#18887#0" expanded="false" />
-                <element signature="e#18929#18930#0" expanded="false" />
-                <element signature="e#21229#21230#0" expanded="false" />
-                <element signature="e#21273#21274#0" expanded="false" />
-                <element signature="e#33342#33343#0" expanded="false" />
-                <element signature="e#33399#33400#0" expanded="false" />
-                <element signature="e#36463#36464#0" expanded="false" />
-                <element signature="e#36521#36522#0" expanded="false" />
-                <element signature="e#37058#37059#0" expanded="false" />
-                <element signature="e#37101#37102#0" expanded="false" />
-                <element signature="e#38375#38376#0" expanded="false" />
-                <element signature="e#38420#38421#0" expanded="false" />
-                <element signature="e#42710#42711#0" expanded="false" />
-                <element signature="e#42741#42742#0" expanded="false" />
-                <element signature="e#43723#43724#0" expanded="false" />
-                <element signature="e#43750#43751#0" expanded="false" />
-                <element signature="e#44007#44008#0" expanded="false" />
-                <element signature="e#44035#44036#0" expanded="false" />
-                <element signature="e#44893#44894#0" expanded="false" />
-                <element signature="e#44962#44963#0" expanded="false" />
-                <element signature="e#46295#46296#0" expanded="false" />
-                <element signature="e#46368#46369#0" expanded="false" />
-                <element signature="e#50830#50831#0" expanded="false" />
-                <element signature="e#50892#50893#0" expanded="false" />
-                <element signature="e#51986#51987#0" expanded="false" />
-                <element signature="e#52015#52016#0" expanded="false" />
-                <element signature="e#64292#65199#0" expanded="false" />
-                <element signature="e#65198#65199#0" expanded="false" />
-                <element signature="e#65766#65767#0" expanded="false" />
-                <element signature="e#65792#65793#0" expanded="false" />
-                <element signature="e#75772#75773#0" expanded="false" />
-                <element signature="e#75844#75845#0" expanded="false" />
-                <element signature="e#77030#77031#0" expanded="false" />
-                <element signature="e#77065#77066#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VM.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/soft/jdk/jre/lib/rt.jar!/sun/misc/VM.class">
+      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/soft/jdk/src.zip!/java/util/HashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="-34471">
+              <caret line="334" column="7" lean-forward="true" selection-start-line="334" selection-start-column="7" selection-end-line="334" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -226,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/Indexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/TestHarness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/Preloader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/BoudedHashSet.java" />
@@ -277,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/CutRod.java" />
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/Matrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java" />
       </list>
     </option>
   </component>
@@ -287,8 +236,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -927,27 +878,7 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Application.MatrixOperation">
-    <configuration default="false" name="FutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tfdxl.aqs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.tfdxl.aqs.FutureTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.LCS">
     <configuration default="false" name="VolatileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1016,6 +947,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dynamic_programming.MatrixOperation" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithms" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LCS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dynamic_programming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="dynamic_programming.LCS" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1610,19 +1561,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.FutureTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.VolatileExample" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Run01" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CutRod" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MatrixOperation" />
+      <item index="0" class="java.lang.String" itemvalue="Application.VolatileExample" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Run01" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CutRod" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MatrixOperation" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LCS" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MatrixOperation" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CutRod" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Run01" />
-        <item index="3" class="java.lang.String" itemvalue="Application.VolatileExample" />
-        <item index="4" class="java.lang.String" itemvalue="Application.FutureTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LCS" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MatrixOperation" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CutRod" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Run01" />
+        <item index="4" class="java.lang.String" itemvalue="Application.VolatileExample" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1691,7 +1642,7 @@
       <workItem from="1490625737444" duration="3146000" />
       <workItem from="1490700153646" duration="7173000" />
       <workItem from="1491204070678" duration="9975000" />
-      <workItem from="1491287329082" duration="3414000" />
+      <workItem from="1491287329082" duration="11668000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1484987936958</created>
@@ -1931,11 +1882,32 @@
       <option name="project" value="LOCAL" />
       <updated>1491290636571</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add">
+      <created>1491290851459</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1491290851459</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add">
+      <created>1491306757017</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1491306757017</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add">
+      <created>1491307165084</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1491307165084</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116610000" />
+    <option name="totallyTimeSpent" value="124864000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1947,7 +1919,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1969,7 +1941,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5702028" sideWeight="0.49353796" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32748538" sideWeight="0.49523053" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32683307" sideWeight="0.49523053" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299532" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11486486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -2036,23 +2008,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/TransferQueue.java" />
-    <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/TimeoutException.java" />
-    <entry file="jar://D:/soft/jdk/src.zip!/java/util/concurrent/FutureTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/multithread/Preloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/search/BinarySeach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="67" lean-forward="false" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/maxsub/MaxSub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
@@ -2348,11 +2303,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea2016.3/idea64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34471">
+          <caret line="334" column="7" lean-forward="true" selection-start-line="334" selection-start-column="7" selection-end-line="334" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk/src.zip!/java/util/stream/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk/src.zip!/java/util/stream/Sink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="116" column="10" lean-forward="false" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/MatrixOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="171">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/LCS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
