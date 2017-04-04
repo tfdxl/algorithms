@@ -85,6 +85,43 @@ public class MatrixOperation {
         }
     }
 
+    public static int memoizedMatrixChain(int[] p) {
+
+        int n = p.length - 1;
+
+        /**
+         * 计算出来的矩阵Ai,j的最小计算代价
+         */
+        int[][] m = new int[n + 1][n + 1];
+        for (int i = 0; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
+                /**
+                 * 表示还没有存过值，只需要上三角
+                 */
+                m[i][j] = Integer.MAX_VALUE;
+            }
+
+        }
+        return lookUpChain(m, p, 1, n);
+    }
+
+    private static int lookUpChain(int[][] m, int[] p, int i, int j) {
+        if (m[i][j] < Integer.MAX_VALUE)
+            return m[i][j];
+
+        if (i == j)
+            m[i][j] = 0;
+        else {
+            for (int k = i; k <= j - 1; k++) {
+                int q = lookUpChain(m, p, i, k) + lookUpChain(m, p, k + 1, j) + p[i - 1] * p[k] * p[j];
+
+                if (q < m[i][j])
+                    m[i][j] = q;
+            }
+        }
+        return m[i][j];
+    }
+
     public static void main(String[] args) {
         int[] p = {30, 35, 15, 5, 10, 20, 25};
         matrixChainOrder(p);
