@@ -14,6 +14,7 @@ public class InstanceFactory {
     }
 
     public static Instance getInstance() {
+        //首次调用导致InstanceHolder被初始化，初始化的时候只有一个线程可以访问
         return InstanceHolder.instance;
     }
 
