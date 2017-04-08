@@ -23,4 +23,26 @@ public class FinalExample {
         int a = finalExample.i;
         int b = finalExample.j;
     }
+
+
+    public static void main(String[] args) {
+
+        Thread t1 = new Thread(() -> {
+            while (true) {
+
+            }
+        });
+        t1.start();
+
+        Thread t2 = new Thread(() -> {
+            while (true) {
+
+            }
+        });
+        t2.start();
+
+        while (true) {
+
+        }
+    }
 }
