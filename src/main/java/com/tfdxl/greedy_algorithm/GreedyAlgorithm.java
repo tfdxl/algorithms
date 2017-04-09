@@ -44,11 +44,19 @@ public class GreedyAlgorithm {
 
         activities[11] = activity11;
 
-        for (Activity activity : recursiveActivitySelector(activities, 0, 11)) {
+        for (Activity activity : greedyActivitySelector(activities)) {
             System.out.println(activity.toString());
         }
     }
 
+    /**
+     * 递归版本
+     *
+     * @param activities
+     * @param k
+     * @param n
+     * @return
+     */
     public static Deque<Activity> recursiveActivitySelector(Activity[] activities, int k, int n) {
         int m = k + 1;
         //找到第一个和a[k]兼容的活动
@@ -68,5 +76,31 @@ public class GreedyAlgorithm {
             return new ArrayDeque<Activity>();
         }
     }
+
+    /**
+     * 迭代版本
+     *
+     * @return
+     */
+    public static Deque<Activity> greedyActivitySelector(Activity[] activities) {
+        //假设第一个活动为伪活动
+        if (activities == null || activities.length <= 0) {
+            return null;
+        }
+        int length = activities.length;
+        Deque<Activity> deque = new ArrayDeque<>();
+        deque.addLast(activities[1]);
+        int k = 1;
+
+        for (int m = 1; m < length; m++) {
+            if (activities[m].getStartTime() >= activities[k].getFinishTime()) {
+                deque.addLast(activities[m]);
+                k = m;
+            }
+        }
+
+        return deque;
+    }
+
 
 }
