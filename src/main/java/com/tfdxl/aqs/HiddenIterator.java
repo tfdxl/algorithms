@@ -6,6 +6,9 @@ import java.util.Set;
 
 /**
  * Created by tianfeng on 2017/4/23.
+ *
+ * 正如封装对象的状态有助于维护不变形条件一样，封装对象的同步机制有助于确保实施同步策略
+ *
  */
 public class HiddenIterator {
 
