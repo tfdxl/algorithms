@@ -1,2 +1,73 @@
-#ignore
-/.idea/*
+# Created by .ignore support plugin (hsz.mobi)
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+
+*.iml
+*target/
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+classes
+/*/catalina.base_IS_UNDEFINED
+lease-admin/catalina.base_IS_UNDEFINED
+/APP_HOME_IS_UNDEFINED/
+/.idea/
+/velocity.log
+/lease-elastic-job/APP_HOME_IS_UNDEFINED/
+
+lease-admin/build/velocity/rebel-remote.xml
+lease-common/src/main/resources/rebel-remote.xml
+lease-core/src/main/resources/rebel-remote.xml
+lease-dubbo-api/src/main/resources/rebel-remote.xml
+lease-elastic-job/config/optimus/beans/rebel-remote.xml
+lease-elastic-job/config/optimus/beans/rebel.xml
+lease-price-center/src/main/resources/rebel-remote.xml
+lease-site/build/velocity/rebel-remote.xml
+lease-site/user_privacy/
+npm-debug.log
+src/main/resources/rebel-remote.xml
+.project
+.settings
+.classpath
+
+**/node_modules/
+/lease-site/APP_HOME_IS_UNDEFINED/
