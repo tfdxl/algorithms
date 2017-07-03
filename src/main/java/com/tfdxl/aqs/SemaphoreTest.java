@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * Created by tianfeng on 2017/4/6.
  */
-public class SemaphoeTest {
+public class SemaphoreTest {
     /**
      * 阻塞锁：同一个时刻只有一个线程运行，当一个线程执行结束的时候，再去释放下一个线程
      * 共享锁:同一个时刻可以有多个线程运行
