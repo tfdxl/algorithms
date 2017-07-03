@@ -14,22 +14,27 @@ import java.util.*;
  */
 public class DoubleListLruCache<K, V> implements Cache<K, V> {
 
+    //这个缓存能容纳的容量
     private int cacheSize;
 
     //缓存容器
     private Hashtable<K, Entry<K, V>> nodes;
 
+    //当前容器所含的数据量
     private int currentSize;
 
     //链表头
-    private Entry first;
+    private Entry<K, V> first;
 
     //链表尾
-    private Entry last;
+    private Entry<K, V> last;
 
+    /**
+     * @param i
+     */
     public DoubleListLruCache(int i) {
         currentSize = 0;
-        cacheSize = 1;
+        cacheSize = i;
         //缓存容器
         nodes = new Hashtable<>(i);
     }
