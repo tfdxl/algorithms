@@ -150,6 +150,7 @@ public class DoubleListLruCache<K, V> implements Cache<K, V> {
 
 
     private void moveToHead(Entry node) {
+
         if (node == first)
             return;
         if (node.prev != null)

@@ -11,7 +11,7 @@ public class XiaoWang implements CallBack {
         this.xiaoli = xiaoli;
     }
 
-    public void askQuestion(final String question) {
+    public synchronized void askQuestion(final String question) {
 
         //we start a new thread
         new Thread(() -> {
@@ -25,7 +25,7 @@ public class XiaoWang implements CallBack {
     }
 
     @Override
-    public void solve(String result) {
+    public synchronized void solve(String result) {
         System.out.println("I get the answer is " + result);
     }
 

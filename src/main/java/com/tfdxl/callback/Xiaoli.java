@@ -5,7 +5,7 @@ package com.tfdxl.callback;
  */
 public class Xiaoli {
 
-    public void executeMessage(CallBack callBack, String question) throws InterruptedException {
+    public synchronized void executeMessage(CallBack callBack, String question) throws InterruptedException {
 
         System.out.println("The question from xiaowang is " + question);
         //assume we need a long time to solve the question
