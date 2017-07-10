@@ -55,4 +55,24 @@ public class BinarySearchAlgorithm {
         }
         return -1;
     }
+
+    public static int indexOf(int[] array, int num) {
+        int n = array.length;
+        int low = 0;
+        int hi = n - 1;
+        int mid = 0;
+        while (low < hi) {
+            mid = (low + hi) / 2;
+            if (array[mid] < num) {
+                low = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+        if (array[low] != num) {
+            return -1;
+        } else {
+            return low;
+        }
+    }
 }
