@@ -6,7 +6,7 @@ package com.tfdxl.bst;
 public class BinarySearchAlgorithm {
 
     /**
-     * binary search in no-recursive way
+     * Binary search in no-recursive way
      *
      * @param array
      * @param num
@@ -32,7 +32,7 @@ public class BinarySearchAlgorithm {
     }
 
     /**
-     * binary search in recursive way
+     * Binary search in recursive way
      *
      * @param array
      * @param num
