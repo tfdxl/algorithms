@@ -34,13 +34,14 @@ public class Solution01 {
         return result;
     }
 
-    private static void recurse(List<List<Integer>> result, int[] nums, Stack path, int position) {
+    private static void recurse(List<List<Integer>> result, int[] nums, Stack<Integer> path, int position) {
 
         if (position == nums.length) {
+            System.out.println("The position is " + position);
             result.add(new ArrayList<>(path));
             return;
         }
-
+        System.out.println("The content of the stack is " + path.toString());
         path.push(nums[position]);
         recurse(result, nums, path, position + 1);
         path.pop();
