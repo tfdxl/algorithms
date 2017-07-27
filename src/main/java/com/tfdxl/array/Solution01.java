@@ -39,12 +39,14 @@ public class Solution01 {
         System.out.println("The current position is " + position);
         if (position == nums.length) {
             System.out.println("the added is " + path);
-            result.add(new ArrayList<>(path));
+            result.add
+                    (new ArrayList<>(path));
             return;
         }
+        System.out.println("The element is pushed " + nums[position]);
         path.push(nums[position]);
         recurse(result, nums, path, position + 1);
-        path.pop();
+        System.out.println("The element is popped "+path.pop());
         recurse(result, nums, path, position + 1);
     }
 
