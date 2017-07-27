@@ -36,12 +36,12 @@ public class Solution01 {
 
     private static void recurse(List<List<Integer>> result, int[] nums, Stack<Integer> path, int position) {
 
+        System.out.println("The current position is " + position);
         if (position == nums.length) {
-            System.out.println("The position is " + position);
+            System.out.println("the added is " + path);
             result.add(new ArrayList<>(path));
             return;
         }
-        System.out.println("The content of the stack is " + path.toString());
         path.push(nums[position]);
         recurse(result, nums, path, position + 1);
         path.pop();
