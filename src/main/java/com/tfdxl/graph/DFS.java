@@ -6,7 +6,6 @@ package com.tfdxl.graph;
  */
 public class DFS {
 
-
     public void dfs(Graph graph) {
 
         //init
@@ -24,6 +23,7 @@ public class DFS {
     }
 
     private void dfsVisit(Graph graph, Vertex u, int time) {
+
         //white vertex u has been discovered
         time++;
         u.setFirstSearchedTime(time);
@@ -36,7 +36,7 @@ public class DFS {
             }
         }
 
-        u.setColor(BFS.Color.WHITE);
+        u.setColor(BFS.Color.BLACK);
         time++;
         u.setAdjacentSearchedTime(time);
     }
