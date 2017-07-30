@@ -36,6 +36,7 @@ public class DFS {
             }
         }
 
+        //已经没有邻接节点，就返回
         u.setColor(BFS.Color.BLACK);
         time++;
         u.setAdjacentSearchedTime(time);
