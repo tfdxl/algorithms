@@ -1,6 +1,6 @@
 package com.tfdxl.graph;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -12,7 +12,6 @@ public class BFS {
 
     public void bfs(Graph graph, Vertex sourceVertex) {
 
-        Queue<Vertex> grayQueue = new ArrayDeque<Vertex>();
 
         //将所有的节点涂成白色，除了源节点
         for (Vertex vertex : graph.getVertexes()) {
@@ -26,6 +25,8 @@ public class BFS {
         sourceVertex.setColor(Color.GRAY);
         sourceVertex.setParent(null);
         sourceVertex.setDistanceFromSourceVertex(0);
+
+        Queue<Vertex> grayQueue = new LinkedList<>();
         grayQueue.add(sourceVertex);
         while (!grayQueue.isEmpty()) {
             Vertex vertex = grayQueue.remove();
