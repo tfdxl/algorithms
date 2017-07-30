@@ -12,7 +12,6 @@ public class BFS {
 
     public void bfs(Graph graph, Vertex sourceVertex) {
 
-
         //将所有的节点涂成白色，除了源节点
         for (Vertex vertex : graph.getVertexes()) {
             if (vertex != sourceVertex) {

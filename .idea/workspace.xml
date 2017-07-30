@@ -20,7 +20,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tfdxl/multithread/TestHarness$1.class" afterPath="$PROJECT_DIR$/target/classes/com/tfdxl/multithread/TestHarness$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tfdxl/multithread/TestHarness.class" afterPath="$PROJECT_DIR$/target/classes/com/tfdxl/multithread/TestHarness.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/DFS.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/DFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/BFS.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/BFS.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -151,14 +151,14 @@
       <file leaf-file-name="BFS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/graph/BFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state relative-caret-position="114">
+              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2063#2064#0" expanded="true" />
-                <element signature="e#2098#2099#0" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-                <element signature="e#2182#2183#0" expanded="true" />
+                <element signature="e#2062#2063#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2181#2182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -259,9 +259,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/test/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/array/TwoSums.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/BFS.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/Vertex.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/DFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/graph/BFS.java" />
       </list>
     </option>
   </component>
@@ -1252,14 +1252,7 @@
       <workItem from="1500543738827" duration="84000" />
       <workItem from="1501146482215" duration="4736000" />
       <workItem from="1501175428367" duration="1472000" />
-      <workItem from="1501410064426" duration="6556000" />
-    </task>
-    <task id="LOCAL-00017" summary="add">
-      <created>1490504485161</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1490504485161</updated>
+      <workItem from="1501410064426" duration="7028000" />
     </task>
     <task id="LOCAL-00018" summary="add">
       <created>1490507039430</created>
@@ -1597,11 +1590,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501432332629</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="add">
+      <created>1501432666563</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1501432666563</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227247000" />
+    <option name="totallyTimeSpent" value="227719000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1967,14 +1967,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/graph/BFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state relative-caret-position="114">
+          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
           </folding>
         </state>
       </provider>
