@@ -33,6 +33,9 @@ public class BFS {
             Queue<Vertex> queue = graph.getAdjcents().get(vertex);
             for (Vertex vertex1 : queue) {
                 if (vertex1.getColor() == Color.WHITE) {
+
+                    System.out.println(vertex1.getName() + vertex1.getColor().toString());
+
                     vertex1.setColor(Color.GRAY);
                     vertex1.setDistanceFromSourceVertex(vertex.getDistanceFromSourceVertex() + 1);
                     vertex1.setParent(vertex);
@@ -44,11 +47,31 @@ public class BFS {
     }
 
 
+    public void printPath(Graph graph, Vertex start, Vertex end) {
+
+        if (end == start) {
+            System.out.println(start.getName());
+        } else if (end.getParent() == null) {
+            System.out.println("No path from start to end");
+        } else {
+            printPath(graph, start, end.getParent());
+            System.out.println(end.getName());
+        }
+    }
+
     public enum Color {
         WHITE("表示没有被发现"),
         GRAY("灰色：已知和未知的边界"),
         BLACK("已经发现并且子节点已经被发现");
         private String desc;
+
+        public String getDesc() {
+            return desc;
+        }
+
+        public void setDesc(String desc) {
+            this.desc = desc;
+        }
 
         Color(String desc) {
             this.desc = desc;
