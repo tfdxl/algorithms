@@ -27,6 +27,8 @@ public class Vertex {
         this.distanceFromSourceVertex = distanceFromSourceVertex;
     }
 
+
+
     public double getDistanceFromSourceVertex() {
         return distanceFromSourceVertex;
     }
