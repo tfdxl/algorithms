@@ -5,7 +5,6 @@ package com.tfdxl.graph;
  */
 public class Vertex {
 
-
     //表示名字
     private char name;
     //定点的颜色
@@ -15,11 +14,11 @@ public class Vertex {
     //该节点到源节点距离
     private double distanceFromSourceVertex;
 
-    //used in dfs
     //第一次被发现的时间
     private int firstSearchedTime;
     //搜索完成对v邻接链表扫描完成的时间
     private int adjacentSearchedTime;
+
     public Vertex(char name, BFS.Color color, Vertex parent, double distanceFromSourceVertex) {
         this.name = name;
         this.color = color;
@@ -64,7 +63,6 @@ public class Vertex {
 
         this.name = name;
     }
-
 
     public Vertex(BFS.Color color, Vertex parent) {
         this.color = color;
