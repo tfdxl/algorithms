@@ -3,11 +3,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <!--[redis-JedisPoolConfig配置](http://blog.csdn.net/liang_love_java/article/details/50510753)-->
-    <!--    jedis-2.7.2.jar 依赖jar包 commons-pool2-2.3.jar
-            jedis基于 commons-pool2-2.3.jar 自己实现了一个资源池。
-            配置参数 详见 http://blog.csdn.net/liang_love_java/article/details/50510753
-    -->
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
         <property name="maxIdle" value="1"/>
         <property name="maxTotal" value="5"/>
@@ -24,10 +19,13 @@
     </bean>
 
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+
         <property name="connectionFactory" ref="jedisConnectionFactory"/>
         <property name="keySerializer">
             <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
         </property>
+
+        <!-- 使用jdk自带的序列化器 -->
         <property name="valueSerializer">
             <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
         </property>
