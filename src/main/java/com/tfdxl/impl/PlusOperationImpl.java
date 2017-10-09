@@ -10,4 +10,8 @@ public class PlusOperationImpl implements IOperation {
     public int operation(int numberA, int numberB) {
         return numberA + numberB;
     }
+
+    public static void main(String[] args) {
+        System.out.println(PlusOperationImpl.class.getName());
+    }
 }

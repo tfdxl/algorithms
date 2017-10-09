@@ -6,15 +6,13 @@ import java.util.concurrent.Executors;
 /**
  * Created by tianfeng on 2017/7/19.
  */
-public class ExecutorCase {
+public class ExecutorCase extends Base{
 
     private static ExecutorService executor = Executors.newFixedThreadPool(100);
 
     public static void main(String[] args) {
-        for (int i = 0; i < 1000; i++) {
-            executor.execute(new Task());
-        }
-        executor.shutdown();
+        System.out.println(ExecutorCase.class.getSimpleName());
+        System.out.println(ExecutorCase.class.getSimpleName());
     }
 
     final static class Task implements Runnable {
@@ -25,3 +23,5 @@ public class ExecutorCase {
         }
     }
 }
+
+class Base{}
