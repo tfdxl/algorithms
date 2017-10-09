@@ -68,13 +68,15 @@ public class RedisLock {
         return false;
     }
 
+    /**
+     * 释放锁
+     */
     public void unlock() {
         try {
             if (this.lock) {
                 redisClient.delKey(key);//直接删除
             }
         } catch (Throwable e) {
-
         }
     }
 }

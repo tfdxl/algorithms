@@ -35,8 +35,10 @@ public class CachedLockInterceptor implements InvocationHandler {
         Annotation[][] annotations = method.getParameterAnnotations();
         //根据获取到的参数注解和参数的列表获取枷锁的参数
         String objValue = getLockedObject(annotations, args).toString();
+
         //new lock
         RedisLock redisLock = new RedisLock(cacheLock.lockPrefix(), objValue);
+
         //加锁
         boolean result = redisLock.lock(cacheLock.timeOut(), cacheLock.expireTime());
         if (!result) {
@@ -45,7 +47,6 @@ public class CachedLockInterceptor implements InvocationHandler {
         }
 
         try {
-            //execute
             return method.invoke(this.proxied, args);
         } finally {
             redisLock.unlock();

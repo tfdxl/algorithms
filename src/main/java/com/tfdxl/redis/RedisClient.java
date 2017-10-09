@@ -270,7 +270,7 @@ public final class RedisClient {
     public boolean delKey(String key) {
         final Jedis client = jedisPool.getResource();
         try {
-            System.out.println("del key=" + key);
+            //System.out.println("del key=" + key);
             return client.del(key) > 0;
         } finally {
             client.close(); // 向连接池“归还”资源
