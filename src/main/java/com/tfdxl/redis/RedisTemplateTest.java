@@ -21,11 +21,10 @@ public class RedisTemplateTest {
         final RedisTemplate<String, Object> redisTemplate = appCtx.getBean("redisTemplate", RedisTemplate.class);
 
         //添加一个 key
-        ValueOperations<String, Object> value = redisTemplate.opsForValue();
-        value.set("lp", "hello word");
+        ValueOperations<String, Object> valueOperations = redisTemplate.opsForValue();
+        valueOperations.set("lp", "hello word");
         //获取 这个 key 的值
-        System.out.println(value.get("lp"));
-
+        System.out.println(valueOperations.get("lp"));
 
         //添加 一个 hash集合
         HashOperations<String, Object, Object> hash = redisTemplate.opsForHash();
@@ -50,11 +49,12 @@ public class RedisTemplateTest {
         set.add("lpSet", "178cm");
         //输出 set 集合
         System.out.println(set.members("lpSet"));
+
         //添加有序的 set 集合
         ZSetOperations<String, Object> zset = redisTemplate.opsForZSet();
-        zset.add("lpZset", "lp", 0);
-        zset.add("lpZset", "26", 1);
-        zset.add("lpZset", "178cm", 2);
+        zset.add("lpZset", "tianfeng", 0);
+        zset.add("lpZset", "monlie", 1);
+        zset.add("lpZset", "tianmeng", 2);
         //输出有序 set 集合
         System.out.println(zset.rangeByScore("lpZset", 0, 2));
     }
