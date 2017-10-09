@@ -121,13 +121,9 @@ public final class RedisClient {
     }
 
     public Long setnx(String key, String value) {
-
         final Jedis client = jedisPool.getResource();
         try {
-            Long result = client.setnx(key, value);
-            System.out.println("setnx key=" + key + " value=" + value +
-                    "result=" + result);
-            return result;
+            return client.setnx(key, value);
         } finally {
             client.close();// 向连接池“归还”资源
         }
