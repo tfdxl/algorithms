@@ -6,9 +6,22 @@ package com.tfdxl.thread.ch02;
 public class Run{
 
     public static void main(String[] args) throws InterruptedException {
-        PrintString printString = new PrintString();
-        printString.printStringMethod();
-        System.out.println("我要停止他");
-        printString.setContinuePrint(false);
+       Thread t = new Thread("thread1"){
+           @Override
+           public void run() {
+               super.run();
+               System.out.println("the thread has executed");
+               try {
+                   Thread.sleep(100000000);
+               } catch (InterruptedException e) {
+                   e.printStackTrace();
+               }
+           }
+       };
+       t.setDaemon(true);
+
+       t.start();
+       Thread.sleep(100000000);
+
     }
 }
