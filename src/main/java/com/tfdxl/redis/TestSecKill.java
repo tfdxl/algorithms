@@ -74,8 +74,8 @@ public class TestSecKill {
             //观察秒杀结果是否正确
             System.out.println("commidityId1 ===> " + SecKillImpl.inventory.get(commidityId1));
             System.out.println("commidityId2 ===> " + SecKillImpl.inventory.get(commidityId2));
-            System.out.println("error count:" + CachedLockInterceptor.FAILED_ACQUIRE_COUNT);
-            System.out.println("total cost: " + (System.currentTimeMillis() - startTime));
+            System.out.println("Error count:" + CachedLockInterceptor.FAILED_ACQUIRE_COUNT);
+            System.out.println("Total cost: " + (System.currentTimeMillis() - startTime));
         } catch (InterruptedException e) {
 
         }

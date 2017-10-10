@@ -25,6 +25,7 @@ public class CachedLockInterceptor implements InvocationHandler {
 
         //获取注解
         CacheLock cacheLock = method.getAnnotation(CacheLock.class);
+
         //没有注解直接执行
         if (null == cacheLock) {
             System.out.println("No cache lock annotation....");
@@ -33,6 +34,7 @@ public class CachedLockInterceptor implements InvocationHandler {
 
         //获取方法中参数的注解
         Annotation[][] annotations = method.getParameterAnnotations();
+
         //根据获取到的参数注解和参数的列表获取枷锁的参数
         String objValue = getLockedObject(annotations, args).toString();
 
@@ -46,6 +48,7 @@ public class CachedLockInterceptor implements InvocationHandler {
             throw new CachedLockException("get lock failed");
         }
 
+        //加锁成功，执行方法
         try {
             return method.invoke(this.proxied, args);
         } finally {

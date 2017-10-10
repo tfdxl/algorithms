@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CachedLockInterceptor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CachedLockInterceptor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="830">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#596#597#0" expanded="true" />
@@ -89,8 +90,8 @@
       <file leaf-file-name="TestSecKill.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+            <state relative-caret-position="592">
+              <caret line="57" column="75" selection-start-line="57" selection-start-column="75" selection-end-line="57" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,7 +139,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="847">
@@ -236,11 +237,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/SeckillInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/SecKillImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java" />
       </list>
     </option>
   </component>
@@ -1196,14 +1197,7 @@
       <workItem from="1504253200319" duration="586000" />
       <workItem from="1504254043435" duration="2278000" />
       <workItem from="1507516046839" duration="13011000" />
-      <workItem from="1507599285673" duration="822000" />
-    </task>
-    <task id="LOCAL-00029" summary="add">
-      <created>1491462118612</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1491462118612</updated>
+      <workItem from="1507599285673" duration="896000" />
     </task>
     <task id="LOCAL-00030" summary="add">
       <created>1491466970469</created>
@@ -1541,7 +1535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507599996355</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Merge branch 'develop' of https://github.com/tfdxl/algorithms into develop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;algorithms.iml&#10;#&#9;pom.xml&#10;">
+      <created>1507600113889</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1507600113889</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1556,7 +1557,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253154000" />
+    <option name="totallyTimeSpent" value="253228000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -2070,33 +2071,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/SeckillInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2115,6 +2094,28 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8722#8730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/TestSecKill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="57" column="75" selection-start-line="57" selection-start-column="75" selection-end-line="57" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/CachedLockInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
           </folding>
         </state>
       </provider>
