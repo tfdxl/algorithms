@@ -305,85 +305,80 @@ public final class RedisClient {
     }
 
     public <T> T hgetObject(String key, String field, Class<T> cls) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             String value = client.hget(key, field);
             return (T) Util.jsonToBean(value, cls);
         } finally {
-            jedisPool.returnResourceObject(client);// 向连接池“归还”资源
+            client.close();// 向连接池“归还”资源
         }
-
     }
 
     public String hgetString(String key, String field) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             String value = client.hget(key, field);
             return value;
         } finally {
-            jedisPool.returnResourceObject(client);// 向连接池“归还”资源
+            client.close();// 向连接池“归还”资源
         }
-
     }
 
     public Map<String, String> hGetAll(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.hgetAll(key);
         } finally {
-            jedisPool.returnResourceObject(client);// 向连接池“归还”资源
+            client.close();// 向连接池“归还”资源
         }
-
     }
 
     public List<String> hkeys(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             List<String> fields = new ArrayList<String>();
             Set<String> set = client.hkeys(key);
             fields.addAll(set);
             return fields;
         } finally {
-            jedisPool.returnResourceObject(client);// 向连接池“归还”资源
+            client.close();// 向连接池“归还”资源
         }
-
     }
 
     public List<String> hvals(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             List<String> values = client.hvals(key);
             return values;
         } finally {
-            jedisPool.returnResourceObject(client);// 向连接池“归还”资源
+            client.close();// 向连接池“归还”资源
         }
-
     }
 
     public boolean hexists(String key, String field) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.hexists(key, field);
         } finally {
-            jedisPool.returnResourceObject(client);// 向连接池“归还”资源
+            client.close();// 向连接池“归还”资源
         }
     }
 
     public long incr(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.incr(key);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public void hdel(String key, String... fields) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             client.hdel(key, fields);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
@@ -392,21 +387,21 @@ public final class RedisClient {
      * @param field
      */
     public void lpush(String key, String field) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             client.lpush(key, field);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public void lpush(String key, Object obj) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             String field = Util.beanToJson(obj);
             client.lpush(key, field);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
@@ -417,49 +412,49 @@ public final class RedisClient {
      * @param field
      */
     public void lpushForErrorMsg(String key, String field) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             if (client.llen(key) > 1000) {
                 return;
             }
             client.lpush(key, field);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public long llen(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.llen(key);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public List<String> blPop(String key, int timeoutSeconds) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.blpop(timeoutSeconds, key);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public <T> long sadd(String key, String... values) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.sadd(key, values);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public <T> long sadd(String key, List<T> ts) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             if (ts == null || ts.size() == 0) {
-                return 0l;
+                return 0L;
             }
             String[] values = new String[ts.size()];
             for (int i = 0; i < ts.size(); i++) {
@@ -467,21 +462,21 @@ public final class RedisClient {
             }
             return client.sadd(key, values);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public long srem(String key, String... values) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.srem(key, values);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public <T> long srem(String key, List<T> ts) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             if (ts == null || ts.size() == 0) {
                 return 0l;
@@ -492,43 +487,43 @@ public final class RedisClient {
             }
             return client.srem(key, values);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public Set<String> getByRange(String key, double min, double max) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.zrangeByScore(key, min, max);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public Long decr(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.decr(key);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public Long hlen(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.hlen(key);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
     public List<String> hmget(String key, String... fields) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.hmget(key, fields);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 
@@ -538,23 +533,23 @@ public final class RedisClient {
      * @param str
      */
     public Set<String> getKeyByStr(String str) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
 
         Set<String> keys = null;
         try {
             keys = client.keys(str);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
         return keys;
     }
 
     public void ltrim(String key, int start, int stop) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             client.ltrim(key, start, stop);
         } finally {
-            jedisPool.returnResourceObject(client);
+            client.close();
         }
     }
 }

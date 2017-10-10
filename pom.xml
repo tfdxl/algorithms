@@ -53,10 +53,7 @@
                 </executions>
             </plugin>
         </plugins>
-
-
     </build>
-
 
     <dependencies>
         <dependency>
@@ -104,7 +101,6 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.mozilla/rhino -->
         <dependency>
             <groupId>org.mozilla</groupId>
@@ -148,10 +144,5 @@
             <artifactId>jboss-marshalling</artifactId>
             <version>1.4.11.Final</version>
         </dependency>
-
     </dependencies>
-
-
-
-
 </project>
