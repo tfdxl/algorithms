@@ -32,8 +32,7 @@ public final class RedisClient {
     }
 
     public Object getByKey(String key) {
-
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             return client.get(key);
         } finally {
@@ -49,7 +48,7 @@ public final class RedisClient {
      * @return
      */
     public <T, S> boolean hmsetWithoutQuotationMarks(String key, Map<T, S> map) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         try {
             Iterator<Map.Entry<T, S>> iterator = map.entrySet().iterator();
             Map<String, String> stringMap = new HashMap<>();
@@ -88,7 +87,7 @@ public final class RedisClient {
      * 判断String类型key是否存在
      */
     public boolean isKeyExist(String key) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         boolean o = false;
         try {
             o = client.exists(key);
@@ -106,7 +105,7 @@ public final class RedisClient {
      * @return
      */
     public boolean set(String key, String value) {
-        Jedis client = jedisPool.getResource();
+        final Jedis client = jedisPool.getResource();
         String isSuccess;
         try {
             isSuccess = client.set(key, value);
@@ -270,7 +269,6 @@ public final class RedisClient {
     public boolean delKey(String key) {
         final Jedis client = jedisPool.getResource();
         try {
-            //System.out.println("del key=" + key);
             return client.del(key) > 0;
         } finally {
             client.close(); // 向连接池“归还”资源

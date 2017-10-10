@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms.iml" afterPath="$PROJECT_DIR$/algorithms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java" />
     </list>
     <ignored path="algorithms.iws" />
@@ -143,11 +141,11 @@
       <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+            <state relative-caret-position="847">
+              <caret line="547" column="43" selection-start-line="547" selection-start-column="43" selection-end-line="547" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8751#8759#0" expanded="true" />
+                <element signature="e#8722#8730#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1198,14 +1196,7 @@
       <workItem from="1504253200319" duration="586000" />
       <workItem from="1504254043435" duration="2278000" />
       <workItem from="1507516046839" duration="13011000" />
-      <workItem from="1507599285673" duration="703000" />
-    </task>
-    <task id="LOCAL-00028" summary="add">
-      <created>1491386332504</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1491386332504</updated>
+      <workItem from="1507599285673" duration="822000" />
     </task>
     <task id="LOCAL-00029" summary="add">
       <created>1491462118612</created>
@@ -1543,7 +1534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507599532159</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Merge branch 'develop' of https://github.com/tfdxl/algorithms into develop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;algorithms.iml&#10;#&#9;pom.xml&#10;">
+      <created>1507599996355</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1507599996355</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1558,7 +1556,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253035000" />
+    <option name="totallyTimeSpent" value="253154000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -2112,11 +2110,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/redis/RedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="847">
+          <caret line="547" column="43" selection-start-line="547" selection-start-column="43" selection-end-line="547" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8751#8759#0" expanded="true" />
+            <element signature="e#8722#8730#0" expanded="true" />
           </folding>
         </state>
       </provider>
