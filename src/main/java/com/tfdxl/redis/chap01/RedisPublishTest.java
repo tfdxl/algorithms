@@ -25,4 +25,14 @@ public class RedisPublishTest {
             jedis.publish("news.it", JSON.toJSONString(new User("username" + count, count, "password" + count)));
         }
     }
+
+    @Test
+    public void sync() {
+        Long count = jedis.pubsubNumPat();
+        jedis.clientSetname("tianfeng");
+        System.err.println(count);
+
+        String[] arr = jedis.clientList().split("\n");
+        System.err.println("clientList: \n" + arr);
+    }
 }
