@@ -14,7 +14,7 @@ public class RedisPublishTest {
 
     @Before
     public void setup() {
-        this.jedis = new Jedis("127.0.0.1", 6379);
+        this.jedis = new Jedis("192.168.2.180", 6379);
     }
 
     @Test
