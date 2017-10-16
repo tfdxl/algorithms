@@ -33,6 +33,8 @@ public class RedisPublishTest {
         System.err.println(count);
 
         String[] arr = jedis.clientList().split("\n");
-        System.err.println("clientList: \n" + arr);
+        for (String str : arr) {
+            System.err.println(str);
+        }
     }
 }
