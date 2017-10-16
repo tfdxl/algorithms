@@ -2,22 +2,27 @@ package com.tfdxl.redis.chap01;
 
 import com.alibaba.fastjson.JSON;
 import com.tfdxl.redis.util.RedisUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisMonitor;
 import redis.clients.jedis.JedisPubSub;
 
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+
 /**
  * Created by tianfeng on 2017/10/13.
  */
+@Slf4j
 public class JRedisTest {
 
     private Jedis jedis;
 
     @Before
     public void setup() {
-        this.jedis = new Jedis("127.0.0.1", 6379);
+        this.jedis = new Jedis("192.168.2.180", 6379);
     }
 
     @Test
@@ -29,13 +34,17 @@ public class JRedisTest {
         System.out.print(result);
         try {
             Thread.sleep(1000L);
+            List<String> time = jedis.time();
+            jedis.select(3);
+            Long currentDb = jedis.getDB();
+            System.err.println("Current DB : " + currentDb);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         JedisMonitor jedisMonitor = new JedisMonitor() {
             @Override
             public void onCommand(String command) {
-                System.out.println("Babe,I got the command: " + command);
+                System.err.println("I got the command: " + command);
             }
         };
         jedis.monitor(jedisMonitor);
@@ -92,5 +101,18 @@ public class JRedisTest {
             }
         };
         jedis.subscribe(jedisPubSub, "news.it");
+    }
+
+    @Test
+    public void testHash() throws InterruptedException {
+
+        this.jedis.hset("config", "name", "tianfeng");
+        String name = jedis.hget("config", "name");
+        System.err.println(name);
+
+        jedis.set("msg", "hello world");
+        final String encoding = jedis.objectEncoding("msg");
+        System.err.println("encoding is " + encoding);
+
     }
 }
