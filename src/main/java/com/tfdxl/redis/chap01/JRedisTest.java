@@ -8,9 +8,9 @@ import org.junit.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisMonitor;
 import redis.clients.jedis.JedisPubSub;
+import redis.clients.jedis.Transaction;
 
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by tianfeng on 2017/10/13.
@@ -113,6 +113,26 @@ public class JRedisTest {
         jedis.set("msg", "hello world");
         final String encoding = jedis.objectEncoding("msg");
         System.err.println("encoding is " + encoding);
+
+    }
+
+    @Test
+    public void testWatch() {
+        this.jedis.set("goal", "get better");
+        this.jedis.watch("name");
+
+        final Transaction transaction = this.jedis.multi();
+        transaction.set("goal", "be happy");
+        try {
+            Thread.sleep(10000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        List<Object> result = transaction.exec();
+        for (Object o : result) {
+            System.err.println("Result is : " + o.toString());
+        }
+
 
     }
 }
