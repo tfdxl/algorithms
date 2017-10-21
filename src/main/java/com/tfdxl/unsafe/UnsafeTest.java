@@ -1,13 +1,12 @@
 package com.tfdxl.unsafe;
 
 /**
- * Created by tianfeng on 2017/10/21.
+ * @author Tian Feng
  */
 public class UnsafeTest {
 
     private UnsafeTest next;
 
-    // Unsafe mechanics
     /**
      * Unsafe mechanics
      */
