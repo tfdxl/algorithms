@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
+import java.util.List;
+
 /**
  * Created by tianfeng on 2017/10/13.
  */
@@ -14,7 +16,7 @@ public class RedisPublishTest {
 
     @Before
     public void setup() {
-        this.jedis = new Jedis("192.168.2.180", 6379);
+        this.jedis = new Jedis("127.0.0.1", 6379);
     }
 
     @Test
@@ -31,8 +33,17 @@ public class RedisPublishTest {
         Long count = jedis.pubsubNumPat();
         jedis.clientSetname("tianfeng");
         System.err.println(count);
+        List<String> list = jedis.time();
+        for (String s : list) {
+            System.err.println("Time : " + s);
+        }
+
 
         String[] arr = jedis.clientList().split("\n");
-        System.err.println("clientList: \n" + arr);
+        for (String str : arr) {
+            System.err.println(str);
+        }
+
+        jedis.clusterFailover();
     }
 }

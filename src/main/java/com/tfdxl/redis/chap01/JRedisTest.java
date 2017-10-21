@@ -113,7 +113,6 @@ public class JRedisTest {
         jedis.set("msg", "hello world");
         final String encoding = jedis.objectEncoding("msg");
         System.err.println("encoding is " + encoding);
-
     }
 
     @Test
