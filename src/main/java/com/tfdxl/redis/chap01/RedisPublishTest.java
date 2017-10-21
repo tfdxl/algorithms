@@ -38,9 +38,12 @@ public class RedisPublishTest {
             System.err.println("Time : " + s);
         }
 
+
         String[] arr = jedis.clientList().split("\n");
         for (String str : arr) {
             System.err.println(str);
         }
+
+        jedis.clusterFailover();
     }
 }

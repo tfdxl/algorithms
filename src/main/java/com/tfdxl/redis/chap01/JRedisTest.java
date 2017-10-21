@@ -10,7 +10,6 @@ import redis.clients.jedis.JedisMonitor;
 import redis.clients.jedis.JedisPubSub;
 
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by tianfeng on 2017/10/13.
@@ -113,6 +112,5 @@ public class JRedisTest {
         jedis.set("msg", "hello world");
         final String encoding = jedis.objectEncoding("msg");
         System.err.println("encoding is " + encoding);
-
     }
 }
