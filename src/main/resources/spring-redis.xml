@@ -36,4 +36,5 @@
         </property>
     </bean>
 
+    <bean id="myBean" class="com.tfdxl.unittest.MyBean"></bean>
 </beans>
