@@ -1,5 +1,8 @@
 package com.tfdxl.unittest;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -22,12 +25,38 @@ public class BaseJunit4Test {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(BaseJunit4Test.class);
 
+    /**
+     * 用于执行大部分乃至全部测试所要求的一般性准备工作
+     */
+    @BeforeClass
+    public static void beforeClass() {
+
+        LOGGER.info("beforeClass Current Thread is " + Thread.currentThread().getName());
+    }
+
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
+    /**
+     * 通常用来准备测试数据
+     */
+    @Before
+    public void prepare() {
+
+    }
+
     @Test
     public void testGet() {
+        LOGGER.info("testGet Current Thread is " + Thread.currentThread().getName());
         String randomKey = redisTemplate.randomKey();
         LOGGER.info("randomKey is " + randomKey);
+    }
+
+    /**
+     * 用来释放资源
+     */
+    @After
+    public void release() {
+        System.err.println("release resouces ... ");
     }
 }
