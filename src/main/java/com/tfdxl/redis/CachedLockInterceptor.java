@@ -72,7 +72,6 @@ public class CachedLockInterceptor implements InvocationHandler {
         for (int i = 0; i < annotations.length; i++) {
             for (int j = 0; j < annotations[i].length; j++) {
                 if (annotations[i][j] instanceof LockedComplexObject) {//注解为LockedComplexObject
-                    index = i;
                     try {
                         return args[i].getClass().getField(((LockedComplexObject) annotations[i][j]).field());
                     } catch (NoSuchFieldException | SecurityException e) {

@@ -1,5 +1,6 @@
 package com.tfdxl.redis;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.ListOperations;
@@ -12,12 +13,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by tianfeng on 2017/10/9.
+ *
+ * @author tianfeng
+ * @date 2017/10/9
  */
 public class RedisTemplateTest {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-redis.xml");
+        ApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-redis.xml");
         final RedisTemplate<String, Object> redisTemplate = appCtx.getBean("redisTemplate", RedisTemplate.class);
 
         //添加一个 key
@@ -28,7 +31,7 @@ public class RedisTemplateTest {
 
         //添加 一个 hash集合
         HashOperations<String, Object, Object> hash = redisTemplate.opsForHash();
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<String, Object>(16);
         map.put("name", "lp");
         map.put("age", "26");
         hash.putAll("lpMap", map);
