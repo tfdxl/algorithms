@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fe3ee48-23d0-4061-9c5d-ca2f15166664" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/file/ClassTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tfdxl/file/ThreadInt.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algorithms.iws" />
@@ -70,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/file/ThreadInt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -1145,14 +1143,7 @@
       <workItem from="1515652769819" duration="2933000" />
       <workItem from="1521529262612" duration="830000" />
       <workItem from="1521531330336" duration="57000" />
-      <workItem from="1521602194727" duration="57000" />
-    </task>
-    <task id="LOCAL-00045" summary="add">
-      <created>1491733621323</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1491733621323</updated>
+      <workItem from="1521602194727" duration="73000" />
     </task>
     <task id="LOCAL-00046" summary="add">
       <created>1491734782462</created>
@@ -1490,7 +1481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514351443095</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Merge remote-tracking branch 'origin/develop' into develop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1521602266117</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1521602266118</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1526,7 +1524,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371463000" />
+    <option name="totallyTimeSpent" value="371479000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -2120,7 +2118,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfdxl/file/ThreadInt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
